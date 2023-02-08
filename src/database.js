@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-require("dotenv").config();
+import {MONGODB_URI} from "./config.js";
 
 const uri = process.env.MONGODB_URI || "mongodb://localhost:27017";
 

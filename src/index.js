@@ -1,8 +1,8 @@
+import {PORT} from "./config";
 import app from "./app";
 import "./database";
 
-const port = process.env.PORT || 3000;
 
-app.listen(port, () => {
-    console.log(`Server on port ${port}`);
+app.listen(PORT, () => {
+    console.log(`Server on port ${PORT}`);
 });
