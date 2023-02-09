@@ -1,8 +1,8 @@
-import {PORT} from "./config";
-import app from "./app";
-import "./database";
+const { PORT } = require("./config");
+const app = require("./app");
+require("./database");
 
 
 app.listen(PORT, () => {
-    console.log(`Server on port ${PORT}`);
+    console.log(`------------Server on port ${PORT} ------------`);
 });

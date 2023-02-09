@@ -1,6 +1,5 @@
-import { Router } from "express";
-import Consulta from "../models/Consulta";
-
+const { Router } = require("express");
+const Consulta = require("../models/Consulta");
 const router = Router();
 
 router.get("/", (req, res) => {
@@ -27,4 +26,4 @@ router.get("/consulta", async (req, res) => {
 });
 
 
-export default router;
+module.exports = router;

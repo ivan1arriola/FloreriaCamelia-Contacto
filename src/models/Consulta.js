@@ -1,5 +1,4 @@
-import {Schema, model} from 'mongoose';
-  
+const {Schema, model} = require('mongoose');  
 
 const ConsultaSchema = new Schema({
     nombre: {type: String, required: true, trim : true},
@@ -13,7 +12,8 @@ const ConsultaSchema = new Schema({
 });
 
 
-export default model('Consulta', ConsultaSchema);
+module.exports = model('Consulta', ConsultaSchema);
+
 
 
 /* Consulta
